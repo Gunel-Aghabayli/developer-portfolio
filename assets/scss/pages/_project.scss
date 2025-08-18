@@ -1,0 +1,39 @@
+@use "../variables" as *;
+
+.allprojects {
+    margin-top: 50px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .all {
+      color: $textGray;
+    }
+    .row {
+      .title {
+        font-size: 32px;
+        color: $pureWhite;
+        font-weight: 600;
+        .slash {
+          color: $violet;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .projects{
+    .container{
+      .row{
+        .projects-grid{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

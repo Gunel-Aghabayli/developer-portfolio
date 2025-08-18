@@ -1,0 +1,121 @@
+@use "../variables" as *;
+
+.header {
+  padding: 32px 8px;
+  .container {
+    .row {
+      .burger-menu {
+        display: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 1001;
+
+        img {
+          width: 28px;
+          height: 28px;
+        }
+
+        .close-icon {
+          display: none;
+        }
+      }
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        img {
+          width: 16px;
+        }
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-weight: 700;
+        color: $pureWhite;
+        a {
+          color: $pureWhite;
+        }
+      }
+      .nav {
+        .navLists {
+          display: flex;
+          gap: 30px;
+          li {
+            a {
+              color: $textGray;
+              position: relative;
+
+              &::after {
+                content: "#";
+                position: absolute;
+                left: -10px;
+                color: $violet;
+              }
+            }
+          }
+          .lang {
+            select {
+              color: $textGray;
+              border: none;
+              font-size: 16px;
+              cursor: pointer;
+              outline: none;
+              transition: all 0.3s ease;
+              &:hover {
+                color: $pureWhite;
+              }
+              option {
+                background-color: $bgColor;
+                color: $textGray;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.header-media {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  left: 16px;
+  gap: 8px;
+  top: 0px;
+  .line {
+    width: 2px;
+    height: 33vh;
+    background-color: $textGray;
+  }
+  .icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .header .container .row .burger-menu {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px;
+    height: 100%;
+ 
+    transition: right 0.3s ease;
+    padding-top: 60px;
+    z-index: 1000;
+
+    .navLists {
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 20px;
+    }
+  }
+
+  .nav.active {
+    right: 0;
+  }
+}

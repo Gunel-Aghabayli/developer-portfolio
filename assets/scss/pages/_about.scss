@@ -1,0 +1,389 @@
+@use "../variables" as *;
+
+.skills {
+  margin-top: 90px;
+  .container {
+    .row {
+      display: flex;
+      flex-direction: column;
+      .project-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .first-part {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .linePro {
+            width: 400px;
+            background-color: $violet;
+            height: 1px;
+            display: block;
+          }
+          a {
+            color: $textGray;
+            position: relative;
+            font-size: 32px;
+            font-weight: 500;
+            color: $pureWhite;
+            &::after {
+              content: "#";
+              position: absolute;
+              left: -20px;
+              color: $violet;
+            }
+          }
+        }
+        .second-part {
+          a {
+            color: $pureWhite;
+            transition: 0.3s ease;
+            &:hover {
+              color: $violet;
+            }
+          }
+        }
+      }
+      .skilltwo {
+        display: flex;
+
+        margin-top: 40px;
+        .skills-left {
+          position: relative;
+          width: 40%;
+          min-height: 300px;
+
+          .dots {
+            display: grid;
+            grid-template-columns: repeat(6, 8px);
+            gap: 8px;
+
+            &::before {
+              content: "";
+            }
+
+            div {
+              width: 8px;
+              height: 8px;
+              background: #aaa;
+              border-radius: 50%;
+            }
+          }
+
+          .dots-big {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            grid-template-columns: repeat(8, 8px);
+            gap: 8px;
+            div {
+              background: #999;
+            }
+          }
+
+          .dots-small {
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            grid-template-columns: repeat(5, 8px);
+            gap: 8px;
+            div {
+              background: #999;
+            }
+          }
+
+          .purple-shape {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            width: 60px;
+            height: 60px;
+            border: 2px solid $violet;
+            box-sizing: border-box;
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 20px;
+              left: 20px;
+              width: 60px;
+              height: 60px;
+              border: 2px solid $violet;
+            }
+          }
+        }
+        .skills-right {
+          width: 60%;
+
+          .skills-gridtwo {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+          }
+          .skills-gridtext {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+          }
+
+          .skill-boxtwo {
+            border: 1px solid $textGray;
+            padding: 10px 15px;
+            color: $pureWhite;
+            width: 300px;
+            margin-top: 20px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              background-color: $bgColor;
+              color: $violet;
+            }
+            p {
+              margin: 0 0 10px;
+              padding-bottom: 5px;
+              background-color: transparent;
+            }
+
+            h4 {
+              border-bottom: 1px solid $textGray;
+              margin-bottom: 10px;
+              background-color: transparent;
+            }
+          }
+          .skill-boxtext {
+            border: 1px solid $textGray;
+            padding: 10px 15px;
+            color: $pureWhite;
+            width: 300px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            &:hover {
+              background-color: $bgColor;
+              color: $violet;
+            }
+            p {
+              margin: 0 0 10px;
+              font-weight: bold;
+              padding-bottom: 5px;
+              background-color: transparent;
+            }
+
+            p {
+              margin: 0;
+              font-size: 14px;
+              color: $textGray;
+              background-color: transparent;
+              &:hover {
+                color: $violet;
+              }
+            }
+          }
+        }
+      }
+      .facts {
+      }
+    }
+  }
+}
+.abouttwo {
+  margin-top: 90px;
+  .rec {
+    position: absolute;
+    right: 0;
+  }
+  .container {
+    .row {
+      display: flex;
+      flex-direction: column;
+      .about-content {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        .info {
+          color: $textGray;
+          max-width: 70%;
+          line-height: 2;
+          .project-links {
+            margin-top: 50px;
+            a {
+              border: 1px solid $violet;
+              color: $pureWhite;
+              padding: 5px 12px;
+              text-decoration: none;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background-color: $violet;
+                color: $pureWhite;
+                transform: translateY(-2px);
+              }
+            }
+          }
+        }
+        .infoimg {
+          img {
+            height: 500px;
+          }
+        }
+      }
+      .project-header {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .first-part {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .linePro {
+            width: 400px;
+            background-color: $violet;
+            height: 1px;
+            display: block;
+          }
+          a {
+            color: $textGray;
+            position: relative;
+            font-size: 32px;
+            font-weight: 500;
+            color: $pureWhite;
+            &::after {
+              content: "#";
+              position: absolute;
+              left: -20px;
+              color: $violet;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .abouttwo {
+    .container {
+        width: 100%;
+      .row {
+        .project-header{
+            .first-part{
+                padding-left: 120px;
+                margin-bottom: 30px;
+            }
+        }
+        .about-content {
+            display: flex;
+        flex-direction: column;
+          .info {
+            display: flex;
+            align-items: flex-start;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  .skills {
+    .container {
+      .row {
+        .skilltwo{
+            .skills-right{
+                .skills-gridtwo{
+                    display: flex;
+                    flex-direction: column;
+                    .skill-boxtwo{
+                        width: 600px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+  .skills{
+    .container{
+        .row{
+            .skilltwo{
+                .skills-right{
+                    .skills-gridtext{
+                        display: flex;
+                        flex-direction: column;
+                        .skill-boxtext{
+                            font-size: 35px;
+                            width: 600px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+
+@media (max-width: 428px) {
+  .abouttwo {
+    .container {
+      .row {
+        .project-header{
+            .first-part{
+                padding-left: 70px;
+                margin-bottom: 30px;
+            }
+        }
+        .about-content {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+          .info {
+            display: flex;
+            align-items: flex-start;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  .skills {
+    .container {
+      .row {
+        .skilltwo{
+            .skills-right{
+                .skills-gridtwo{
+                    display: flex;
+                    flex-direction: column;
+
+                    .skill-boxtwo{
+                        width: 300px;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+  .skills{
+    .container{
+        .row{
+            .skilltwo{
+                .skills-right{
+                    .skills-gridtext{
+                        display: flex;
+                        flex-direction: column;
+                        .skill-boxtext{
+                            font-size: 35px;
+                            width: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}
