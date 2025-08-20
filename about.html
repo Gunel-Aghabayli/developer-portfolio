@@ -26,9 +26,9 @@
 
                 <nav class="nav">
                     <ul class="navLists">
-                        <li><a href="/index.html" class="active">home</a></li>
-                        <li><a href="/project.html">projects</a></li>
-                        <li><a href="/about.html">about-me</a></li>
+                        <li><a href="/index.html" class="active" data-i18n="home">home</a></li>
+                        <li><a href="/project.html" data-i18n="projects">projects</a></li>
+                        <li><a href="/about.html" data-i18n="about">about-me</a></li>
                         <li class="lang">
                             <select>
                                 <option value="en" selected>EN</option>
@@ -40,7 +40,6 @@
             </div>
         </div>
     </header>
-
     <div class="header-media">
         <span class="line"></span>
         <div class="icons">
@@ -55,36 +54,17 @@
                 <div class="row">
                     <div class="title">
                         <span class="slash">/</span>
-                        <span>about-me</span>
+                        <span data-i18n="about">about-me</span>
                     </div>
                 </div>
-                <div class="all">Who am I?</div>
+                <div class="all" data-i18n="who">Who am I?</div>
             </div>
         </section>
         <section class="abouttwo">
             <div class="container">
                 <div class="row">
-                    <div class="project-header">
-                        <div class="first-part">
-                            <a href="">about</a>
-                            <span class="linePro"></span>
-                        </div>
-                    </div>
                     <div class="about-content">
-                        <div class="info">
-                            <div>
-                                <p>My name is Gunel. I’m a front-end developer based in Baku, Azerbaijan. I can develop
-                                    responsive
-                                    websites from scratch and raise them into modern user-friendly web experiences.</p>
-                                <br>
-                                <p>Transforming my creativity and knowledge into a websites has been my passion for over
-                                    two
-                                    years. I have been helping various clients to establish their presence online. I
-                                    always
-                                    strive to learn about the newest technologies and frameworks.I always strive to
-                                    learn about the newest technologies and frameworks.</p>
-                            </div>
-                        </div>
+                        <div class="info"></div>
                         <div class="infoimg">
                             <img src="./assets/images/Daco_1680973.png" alt="">
                         </div>
@@ -97,29 +77,13 @@
                 <div class="row">
                     <div class="project-header">
                         <div class="first-part">
-                            <a href="">education</a>
+                            <a href="" data-i18n="education">education</a>
                             <span class="linePro"></span>
                         </div>
                     </div>
                     <div class="skilltwo">
                         <div class="skills-right">
-                            <div class="skills-gridtwo">
-                                <div class="skill-boxtwo">
-                                    <h4>University</h4>
-                                    <p>Khazar University</p>
-                                    <p>2020-2024</p>
-                                </div>
-                                <div class="skill-boxtwo">
-                                    <h4>Course</h4>
-                                    <p>Texnoera Academy-Front-end programming</p>
-                                    <p>June 2025-Present</p>
-                                </div>
-                                <div class="skill-boxtwo">
-                                    <h4>Tools</h4>
-                                    <p>Git & Github</p>
-                                    <p>VS Code </p>
-                                </div>
-                            </div>
+                            <div class="skills-gridtwo"></div>
                         </div>
                     </div>
                 </div>
@@ -130,29 +94,14 @@
                 <div class="row">
                     <div class="project-header">
                         <div class="first-part">
-                            <a href="">fun-facts</a>
+                            <a href="" data-i18n="fun-facts">fun-facts</a>
                             <span class="linePro"></span>
                         </div>
                     </div>
                     <div class="skilltwo">
                         <div class="skills-right">
-                            <div class="skills-gridtext">
-                                <div class="skill-boxtext">
-                                    <p>My brain runs in dark mode by default.</p>
-                                </div>
-                                <div class="skill-boxtext">
-                                    <p>Sometimes I write code so clean… I don’t understand it the next day.</p>
-                                </div>
-                                <div class="skill-boxtext">
-                                    <p>My browser has 20 tabs open… 18 are Stack Overflow.</p>
-                                </div>
-                                <div class="skill-boxtext">
-                                    <p>I’ve merged code that I didn’t fully understand, and lived to tell the tale.</p>
-                                </div>
-                                <div class="skill-boxtext">
-                                    <p>My browser has 20 tabs open… 18 are Stack Overflow.</p>
-                                </div>
-                            </div>
+
+                            <div class="skills-gridtext"></div>
                         </div>
                     </div>
                 </div>
@@ -167,26 +116,23 @@
                         <img src="./assets/images/logo.svg" alt="logo">
                         <span>devNella</span>
                     </div>
-                    <a href="mailto:elias.devis@protonmail.com" class="email">elias.devis@protonmail.com</a>
-                    <p class="tagline">Web designer and front-end developer based in Azerbaijan</p>
+                    <a href="#" class="email"></a>
+                    <p class="tagline" data-i18n="footerTagline">Web designer and front-end developer based in
+                        Azerbaijan</p>
                 </div>
-
                 <div class="footer-right">
                     <h3 class="media-title">Media</h3>
-                    <div class="social-icons">
-                        <a href="#"><img src="./assets/images/Github.png" alt="github"></a>
-                        <a href="#"><img src="./assets/images/Figma (1).png" alt="figma"></a>
-                        <a href="#"><img src="./assets/images/Email.png" alt="email"></a>
-                    </div>
+                    <div class="social-icons"></div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© Copyright 2025. Made by Gunel</p>
+                <p data-i18n="footerCopyright">© Copyright 2025. Made by Gunel</p>
             </div>
         </div>
     </footer>
     <script src="./assets/js/data.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/lang.js"></script>
 </body>
 
 </html>
