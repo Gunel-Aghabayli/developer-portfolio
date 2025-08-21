@@ -1,66 +1,126 @@
 const quotes = [
   {
-    message: "With great power comes great electricity bill",
-    author: "Dr. Who",
+    message: {
+      en: "With great power comes great electricity bill",
+      az: "Böyük güclə böyük elektrik hesabı gəlir"
+    },
+    author: {
+      en: "Dr. Who",
+      az: "Dr. Kim"
+    }
   },
   {
-    message: "Good code is its own best documentation",
-    author: "Steve McConnell",
+    message: {
+      en: "Good code is its own best documentation",
+      az: "Yaxşı kod özünün ən yaxşı sənədləşdirməsidir"
+    },
+    author: {
+      en: "Steve McConnell",
+      az: "Stiv Makkonnell"
+    }
   },
   {
-    message: "A good programmer is lazy but efficient",
-    author: "Jeff Sickel",
-  },
+    message: {
+      en: "A good programmer is lazy but efficient",
+      az: "Yaxşı proqramçı tənbəl amma səmərəlidir"
+    },
+    author: {
+      en: "Jeff Sickel",
+      az: "Cef Sikel"
+    }
+  }
 ];
 
 const projects = [
   {
-    name: "Qamico",
-    description: "Game development",
+    name: {
+      en: "Qamico",
+      az: "Qamico"
+    },
+    description: {
+      en: "Game development",
+      az: "Oyun inkişafı"
+    },
     image: "./assets/images/Screenshot 2025-08-12 200432.png",
     tags: ["Supabase", "React JS", "Redux"],
     github: "#",
   },
-  {
-    name: "Blanca",
-    description: "Personal travel blog",
+   {
+    name: {
+      en: "Blanca",
+      az: "Blanca"
+    },
+    description: {
+      en: "Personal travel blog",
+      az: "Şəxsi səyahət blogu"
+    },
     image: "/assets/images/Screenshot 2025-08-12 200639.png",
     tags: ["HTML", "SCSS"],
     github: "#",
   },
-  {
-    name: "Omnifood",
-    description: "Food delivery service",
+   {
+    name: {
+      en: "Omnifood",
+      az: "Omnifood"
+    },
+    description: {
+      en: "Food delivery service",
+      az: "Yemək çatdırılma xidməti"
+    },
     image: "/assets/images/Screenshot 2025-08-12 200936.png",
-    tags: ["React JS", "CSS", "Redux"],
+    tags: ["CSS", "React JS", "Redux"],
     github: "#",
   },
-  {
-    name: "PowerTool",
-    description: "Power tools cordless",
+   {
+    name: {
+      en: "Powertool",
+      az: "Powertool"
+    },
+    description: {
+      en: "Power tools cordless",
+      az: "Elektrik alətləri"
+    },
     image: "/assets/images/Screenshot 2025-08-12 205557.png",
     tags: ["HTML", "SCSS"],
     github: "#",
   },
-  {
-    name: "Clark",
-    description: "Freelance web designer portfolio",
+   {
+    name: {
+      en: "Clark",
+      az: "Clark"
+    },
+    description: {
+      en: "Freelance web designer portfolio",
+      az: "Frilans veb designer portfolio"
+    },
     image: "/assets/images/Screenshot 2025-08-12 200241.png",
-    tags: ["HTML", "SCSS"],
+    tags: ["Supabase", "React JS"],
     github: "#",
   },
-  {
-    name: "Prospark",
-    description: "Power tools cordless",
+   {
+    name: {
+      en: "Prospark",
+      az: "Prospark"
+    },
+    description: {
+      en: "Digital marketing services",
+      az: "Rəqəmsal marketinq xidmətləri"
+    },
     image: "/assets/images/Screenshot 2025-08-12 200836.png",
-    tags: ["React JS", "HTML", "CSS"],
+    tags: ["HTML", "CSS", "JavaScript"],
     github: "#",
   },
-  {
-    name: "Accent",
-    description: "Power tools cordless",
+   {
+    name: {
+      en: "Accent",
+      az: "Accent"
+    },
+    description: {
+      en: "Web studio",
+      az: "Veb studiya"
+    },
     image: "/assets/images/Screenshot 2025-08-14 023459.png",
-    tags: ["React JS", "SCSS"],
+    tags: ["Supabase", "React JS", "Redux"],
     github: "#",
   },
 ];
@@ -73,13 +133,22 @@ const skills = {
 };
 
 const about = {
-  shortText:
-    "My name is Gunel. I’m a front-end developer based in Baku, Azerbaijan. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences...",
-  fullText: `My name is Gunel. I’m a front-end developer based in Baku, Azerbaijan. 
+  shortText: {
+    en: "My name is Gunel. I'm a front-end developer based in Baku, Azerbaijan. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences...",
+    az: "Mənim adım Güneldir. Mən Bakı, Azərbaycanda yaşayan front-end developerəm. Sıfırdan responsiv vebsaytlar hazırlaya bilirəm və onları müasir, istifadəçi dostu veb təcrübələrinə çevirə bilirəm..."
+  },
+  fullText: {
+    en: `My name is Gunel. I'm a front-end developer based in Baku, Azerbaijan. 
 I can develop responsive websites from scratch and raise them into modern user-friendly web experiences. 
 Transforming my creativity and knowledge into a websites has been my passion for over one years. 
 I have been helping various clients to establish their presence online. 
 I always strive to learn about the newest technologies and frameworks.`,
+    az: `Mənim adım Güneldir. Mən Bakı, Azərbaycanda yaşayan front-end developerəm.
+Sıfırdan responsiv vebsaytlar hazırlaya bilirəm və onları müasir, istifadəçi dostu veb təcrübələrinə çevirə bilirəm.
+Yaradıcılığımı və biliklərimi vebsaytlara çevirmək bir ildən çoxdur ki, mənim eşqimdir.
+Müxtəlif müştərilərə onlayn mövcudluq yaratmaqda kömək edirəm.
+Həmişə ən yeni texnologiyalar və freymvorklar haqqında öyrənməyə çalışıram.`
+  }
 };
 
 const contact = {
@@ -95,7 +164,6 @@ const contact = {
   },
 };
 
-
 const footer = {
   email: {
     text: "gunelagab@gmail.com",
@@ -108,27 +176,76 @@ const footer = {
   ],
 };
 
-
 const educationData = [
   {
-    title: "University",
-    details: ["Khazar University", "2020-2024"]
+    title: {
+      en: "University",
+      az: "Universitet"
+    },
+    details: [
+      {
+        en: "Khazar University",
+        az: "Xəzər Universiteti"
+      },
+      {
+        en: "2020-2024",
+        az: "2020-2024"
+      }
+    ]
   },
   {
-    title: "Course",
-    details: ["Texnoera Academy - Front-end programming", "June 2025 - Present"]
+    title: {
+      en: "Course",
+      az: "Kurs"
+    },
+    details: [
+      {
+        en: "Texnoera Academy - Front-end programming",
+        az: "Texnoera Akademiyası - Front-end proqramlaşdırma"
+      },
+      {
+        en: "June 2025 - Present",
+        az: "İyun 2025 - Hal-hazırda"
+      }
+    ]
   },
   {
-    title: "Tools",
-    details: ["Git & Github", "VS Code"]
+    title: {
+      en: "Tools",
+      az: "Alətlər"
+    },
+    details: [
+      {
+        en: "Git & Github",
+        az: "Git & Github"
+      },
+      {
+        en: "VS Code",
+        az: "VS Code"
+      }
+    ]
   }
 ];
 
 const funFacts = [
-  "My brain runs in dark mode by default.",
-  "Sometimes I write code so clean… I don’t understand it the next day.",
-  "My browser has 20 tabs open… 18 are Stack Overflow.",
-  "I’ve merged code that I didn’t fully understand, and lived to tell the tale.",
-  "My browser has 20 tabs open… 18 are Stack Overflow."
+  {
+    en: "My brain runs in dark mode by default.",
+    az: "Beynim standart olaraq qaranlıq rejimdə işləyir."
+  },
+  {
+    en: "Sometimes I write code so clean… I don't understand it the next day.",
+    az: "Bəzən elə təmiz kod yazıram ki... Ertəsi gün özüm də başa düşmürəm."
+  },
+  {
+    en: "My browser has 20 tabs open… 18 are Stack Overflow.",
+    az: "Brauzerimdə 20 açıq vərəq var... 18-i Stack Overflow-dur."
+  },
+  {
+    en: "I've merged code that I didn't fully understand, and lived to tell the tale.",
+    az: "Tam başa düşmədiyim kodu birləşdirdim və bunu danışmaq üçün sağ qaldım."
+  },
+  {
+    en: "My browser has 20 tabs open… 18 are Stack Overflow.",
+    az: "Brauzerimdə 20 açıq vərəq var... 18-i Stack Overflow-dur."
+  }
 ];
-

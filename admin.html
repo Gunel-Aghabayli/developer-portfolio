@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="./assets/scss/index.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="admin-page">
+    <header>
+        <h1>Admin dashboard</h1>
+        <div class="buttons">
+            <button onclick="toggleAddForm()">Add new project</button>
+        </div>
+    </header>
+    <section id="addForm" class="hidden">
+        <h2>Add new project</h2>
+        <form id="projectForm">
+            <input type="text" id="name" placeholder="Project name" required>
+            <input type="text" id="desc" placeholder="Description" required>
+            <input type="text" id="image" placeholder="Image URL">
+            <input type="text" id="tags" placeholder="Tags">
+            <input type="text" id="github" placeholder="GitHub link">
+            <button type="submit">Add project</button>
+        </form>
+    </section>
+    <section>
+        <h2>Projects</h2>
+        <ul id="projectList"></ul>
+    </section>
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/admin.js"></script>
+</body>
+</html>

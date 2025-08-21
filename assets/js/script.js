@@ -28,29 +28,32 @@ burgerMenu.addEventListener('click', () => {
 function showQuote() {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   const randomQuote = quotes[randomIndex];
+  const lang = window.getCurrentLanguage ? window.getCurrentLanguage() : 'en';
+  
   quote.innerHTML = `
     <span class="left">❝</span>
-    <blockquote>${randomQuote.message}</blockquote>
-    <small>- ${randomQuote.author}</small>
+    <blockquote>${randomQuote.message[lang]}</blockquote>
+    <small>- ${randomQuote.author[lang]}</small>
     <span class="right">❞</span>
   `;
 }
-showQuote();
 
 
 function showProjects(limit = 3) {
   grid.innerHTML = "";
   const limitedProjects = projects.slice(0, limit);
+  const lang = window.getCurrentLanguage ? window.getCurrentLanguage() : 'en';
+  
   limitedProjects.forEach(project => {
     grid.innerHTML += `
       <div class="project-card">
-        <img src="${project.image}" alt="${project.name}" class="project-image"/>
+        <img src="${project.image}" alt="${project.name[lang]}" class="project-image"/>
         <div class="project-tags">
           ${project.tags.map(tag => `<span>${tag}</span>`).join("")}
         </div>
         <div class="project-content">
-          <h3><a href="#">${project.name}</a></h3>
-          <p>${project.description}</p>
+          <h3><a href="#">${project.name[lang]}</a></h3>
+          <p>${project.description[lang]}</p>
           <div class="project-links">
             <a href="${project.github}">Github =></a>
           </div>
@@ -59,14 +62,26 @@ function showProjects(limit = 3) {
     `;
   });
 }
-showProjects(3);
+
+function showAbout() {
+  const lang = window.getCurrentLanguage ? window.getCurrentLanguage() : 'en';
+  aboutInfo.innerHTML = `<p>${about.shortText[lang]}</p>`;
+}
+
+
+window.addEventListener('languageChanged', function(e) {
+  const lang = e.detail;
+  showQuote();
+  showProjects(3);
+  showAbout();
+  showContact();
+});;
 
 
 showAllProjectsBtn.addEventListener("click", function(e) {
   e.preventDefault();
   showProjects(projects.length);
 });
-
 
 function showSkills() {
   skillsGrid.innerHTML = `
@@ -76,13 +91,13 @@ function showSkills() {
     <div class="skill-box"><h4>Frameworks</h4>${skills.frameworks.map(f => `<p>${f}</p>`).join("")}</div>
   `;
 }
-showSkills();
+showSkills(); 
 
 
-function showAbout() {
-  aboutInfo.innerHTML = `<p>${about.shortText}</p>`;
-}
-showAbout();
+// function showAbout() {
+//   aboutInfo.innerHTML = `<p>${about.shortText}</p>`;
+// }
+// showAbout();
 
 
 function showContact() {

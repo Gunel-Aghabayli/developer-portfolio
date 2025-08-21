@@ -1,0 +1,176 @@
+@use "./variables" as *;
+
+.admin-page {
+  body {
+    background: $bgColor;
+    color: $pureWhite;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background: $violet;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+      background-color: transparent;
+      color: $bgColor;
+    }
+
+    button {
+      color: $violet;
+      border: none;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-weight: 700;
+
+      &:hover {
+        background: $pureWhite;
+      }
+    }
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+
+    h2 {
+      color: $pureWhite;
+    }
+  }
+
+  #addForm {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+      border: 1px solid $textGray;
+      border-radius: 6px;
+      background: transparent;
+      color: $pureWhite;
+
+      &::placeholder {
+        color: $footerText;
+      }
+    }
+
+    button {
+      background: $violet;
+      color: $pureWhite;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+
+      &:hover {
+        background: darken($violet, 10%);
+      }
+    }
+  }
+
+  #projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      background: lighten($bgColor, 5%);
+      border-radius: 10px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      img {
+        width: 100%;
+        max-width: 250px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+        margin: 8px 0 5px 0;
+        text-align: center;
+
+        b {
+          color: $textBlue;
+        }
+      }
+
+      p {
+        color: $textGray;
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+      }
+
+      small {
+        color: $footerText;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $violet;
+        text-decoration: none;
+        margin-bottom: 10px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+
+        button {
+          flex: 1;
+          padding: 6px 12px;
+          border: none;
+          border-radius: 6px;
+          cursor: pointer;
+          color: $pureWhite;
+          font-weight: bold;
+
+          &.edit {
+            background: $textBlue;
+
+            &:hover {
+              background: lighten($textBlue, 10%);
+            }
+          }
+
+          &.delete {
+            background: #e63946;
+
+            &:hover {
+              background: darken(#e63946, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+}

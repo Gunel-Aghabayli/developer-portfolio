@@ -184,8 +184,6 @@
           }
         }
       }
-      .facts {
-      }
     }
   }
 }
@@ -268,17 +266,17 @@
 @media (max-width: 768px) {
   .abouttwo {
     .container {
-        width: 100%;
+      width: 100%;
       .row {
-        .project-header{
-            .first-part{
-                padding-left: 120px;
-                margin-bottom: 30px;
-            }
+        .project-header {
+          .first-part {
+            padding-left: 120px;
+            margin-bottom: 30px;
+          }
         }
         .about-content {
-            display: flex;
-        flex-direction: column;
+          display: flex;
+          flex-direction: column;
           .info {
             display: flex;
             align-items: flex-start;
@@ -291,37 +289,37 @@
   .skills {
     .container {
       .row {
-        .skilltwo{
-            .skills-right{
-                .skills-gridtwo{
-                    display: flex;
-                    flex-direction: column;
-                    .skill-boxtwo{
-                        width: 600px;
-                        font-size: 25px;
-                    }
-                }
+        .skilltwo {
+          .skills-right {
+            .skills-gridtwo {
+              display: flex;
+              flex-direction: column;
+              .skill-boxtwo {
+                width: 600px;
+                font-size: 25px;
+              }
             }
+          }
         }
       }
     }
   }
-  .skills{
-    .container{
-        .row{
-            .skilltwo{
-                .skills-right{
-                    .skills-gridtext{
-                        display: flex;
-                        flex-direction: column;
-                        .skill-boxtext{
-                            font-size: 35px;
-                            width: 600px;
-                        }
-                    }
-                }
+  .skills {
+    .container {
+      .row {
+        .skilltwo {
+          .skills-right {
+            .skills-gridtext {
+              display: flex;
+              flex-direction: column;
+              .skill-boxtext {
+                font-size: 35px;
+                width: 600px;
+              }
             }
+          }
         }
+      }
     }
   }
 }
@@ -330,16 +328,16 @@
   .abouttwo {
     .container {
       .row {
-        .project-header{
-            .first-part{
-                padding-left: 70px;
-                margin-bottom: 30px;
-            }
+        .project-header {
+          .first-part {
+            padding-left: 70px;
+            margin-bottom: 30px;
+          }
         }
         .about-content {
-            display: flex;
-        flex-direction: column;
-        align-items: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           .info {
             display: flex;
             align-items: flex-start;
@@ -352,38 +350,38 @@
   .skills {
     .container {
       .row {
-        .skilltwo{
-            .skills-right{
-                .skills-gridtwo{
-                    display: flex;
-                    flex-direction: column;
+        .skilltwo {
+          .skills-right {
+            .skills-gridtwo {
+              display: flex;
+              flex-direction: column;
 
-                    .skill-boxtwo{
-                        width: 300px;
-                        font-size: 25px;
-                    }
-                }
+              .skill-boxtwo {
+                width: 300px;
+                font-size: 25px;
+              }
             }
+          }
         }
       }
     }
   }
-  .skills{
-    .container{
-        .row{
-            .skilltwo{
-                .skills-right{
-                    .skills-gridtext{
-                        display: flex;
-                        flex-direction: column;
-                        .skill-boxtext{
-                            font-size: 35px;
-                            width: 300px;
-                        }
-                    }
-                }
+  .skills {
+    .container {
+      .row {
+        .skilltwo {
+          .skills-right {
+            .skills-gridtext {
+              display: flex;
+              flex-direction: column;
+              .skill-boxtext {
+                font-size: 35px;
+                width: 300px;
+              }
             }
+          }
         }
+      }
     }
   }
 }
