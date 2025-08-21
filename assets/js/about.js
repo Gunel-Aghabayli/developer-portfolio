@@ -1,3 +1,5 @@
+
+
 const skillsGridTwo = document.querySelector(".skills-gridtwo");
 const skillsGridText = document.querySelector(".skills-gridtext");
 const info = document.querySelector(".info");
@@ -7,7 +9,7 @@ const socialIcons = document.querySelector(".footer-right .social-icons");
 function showAbout() {
   info.innerHTML = `<p>${about.fullText}</p>`;
 }
-showAbout();
+showAbout("az");
 
 function showEducation() {
   skillsGridTwo.innerHTML = "";
@@ -34,7 +36,7 @@ function showFunFacts() {
 }
 
 
-showEducation();
+showEducation("az");
 showFunFacts();
 
 function showFooter() {
@@ -44,4 +46,4 @@ function showFooter() {
     .map(s => `<a href="${s.link}" target="_blank"><img src="${s.icon}" alt="${s.alt}"></a>`)
     .join("");
 }
-console.log(showFooter());
+console.log(showFooter("az"));

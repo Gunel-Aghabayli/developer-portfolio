@@ -12,7 +12,12 @@
     contactJob: "I’m open to freelance and full-time job opportunities. If you have any requests or questions, feel free to get in touch.",
     footerTagline: "Web designer and front-end developer based in Azerbaijan",
     footerCopyright: "© Copyright 2025. Made by Gunel",
-    who:"Who am I?"
+    who:"Who am I?",
+    funfacts:"fun-facts",
+    education:"education",
+    project:"projects",
+    allProjects:"All of projects",
+    decent:"decent"
   },
   az: {
     home: "ana səhifə",
@@ -27,7 +32,12 @@
     contactJob: "Mən freelance və full-time iş imkanlarına açığam. Hər hansı bir sorğunuz və ya sualınız varsa, mənimlə əlaqə saxlaya bilərsiniz.",
     footerTagline: "Azərbaycan əsaslı veb dizayner və front-end developer",
     footerCopyright: "© Copyright 2025. Gunel tərəfindən hazırlanıb",
-    who:"Mən kiməm?"
+    who:"Mən kiməm?",
+    funfacts:"maraqlı faktlar",
+    education:"təhsil",
+    project:"layihələr",
+    allProjects:"Bütün layihələr",
+    decent:"sonuncu"
   }
 };
 
