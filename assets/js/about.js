@@ -36,7 +36,6 @@ function showFunFacts() {
   });
 }
 
-
 window.addEventListener('languageChanged', function(e) {
   const lang = e.detail;
   showAbout();
@@ -52,7 +51,10 @@ function showFooter() {
   emailEl.innerHTML = footer.email.text;
   emailEl.href = footer.email.link;
   socialIcons.innerHTML = footer.socials
-    .map(s => `<a href="${s.link}" target="_blank"><img src="${s.icon}" alt="${s.alt}"></a>`)
+    .map(
+      (item) =>
+        `<a href="${item.link}" target="_blank"><img src="${item.icon}" alt="${item.alt}"></a>`
+    )
     .join("");
 }
-console.log(showFooter("az"));
+showFooter();

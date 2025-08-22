@@ -1,4 +1,3 @@
-
 const grid = document.querySelector(".projects-grid");
 const emailEl = document.querySelector(".footer-left .email");
 const socialIcons = document.querySelector(".footer-right .social-icons");
@@ -33,10 +32,13 @@ window.addEventListener('languageChanged', function(e) {
 showAllProjects();
 
 function showFooter() {
-  emailEl.textContent = footer.email.text;
+  emailEl.innerHTML = footer.email.text;
   emailEl.href = footer.email.link;
   socialIcons.innerHTML = footer.socials
-    .map(s => `<a href="${s.link}" target="_blank"><img src="${s.icon}" alt="${s.alt}"></a>`)
+    .map(
+      (item) =>
+        `<a href="${item.link}" target="_blank"><img src="${item.icon}" alt="${item.alt}"></a>`
+    )
     .join("");
 }
 showFooter();

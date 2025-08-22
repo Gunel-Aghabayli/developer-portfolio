@@ -55,7 +55,7 @@ form.addEventListener("submit", (e) => {
 
   form.reset();
   addForm.classList.add("hidden");
-  submitButton.textContent = "Add Project";
+  submitButton.innerHTML = "Add Project";
   showProjects();
 });
 
@@ -71,10 +71,9 @@ function editProject(i) {
   imageInput.value = p.image;
   tagsInput.value = p.tags.join(", ");
   githubInput.value = p.github;
-
   editingIndex = i;
   addForm.classList.remove("hidden");
-  submitButton.textContent = "Save Project";
+  submitButton.innerHTML = "Save Project";
 }
 
 showProjects();

@@ -45,7 +45,6 @@
 
 let currentLanguage = localStorage.getItem('language') || 'en';
 
-
 function setLanguage(lang) {
   currentLanguage = lang;
   localStorage.setItem('language', lang);
@@ -54,7 +53,7 @@ function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
-      el.textContent = translations[lang][key];
+      el.innerHTML = translations[lang][key];
     }
   });
 

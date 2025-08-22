@@ -6,7 +6,7 @@ const quotes = [
     },
     author: {
       en: "Dr. Who",
-      az: "Dr. Kim"
+      az: "Dr. Hu"
     }
   },
   {
@@ -26,7 +26,7 @@ const quotes = [
     },
     author: {
       en: "Jeff Sickel",
-      az: "Cef Sikel"
+      az: "Cef Zikel"
     }
   }
 ];
